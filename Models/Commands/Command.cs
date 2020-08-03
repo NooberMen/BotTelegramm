@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Services.Description;
+using Telegram.Bot.Types;
 using Telegram.Bot;
 
 namespace lubOfBrutalMen_bot.Models.Commands

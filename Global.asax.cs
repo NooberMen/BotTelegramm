@@ -13,12 +13,12 @@ namespace lubOfBrutalMen_bot
 {
     public class MvcApplication : System.Web.HttpApplication
     {
-        protected void Application_Start()
+        protected async void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            Bot.Get();
+            await Bot.Get();
            
         }
     }

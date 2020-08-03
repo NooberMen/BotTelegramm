@@ -7,7 +7,9 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Results;
+using Telegram.Bot;
 using Telegram.Bot.Types;
+
 
 namespace lubOfBrutalMen_bot.Controllers
 {
@@ -24,10 +26,11 @@ namespace lubOfBrutalMen_bot.Controllers
             {
                 if(command.Contains(message.Text))
                 {
-                    command.Excute(message, client);
-                    break;
+                    command.Execute(message, client);
+                    break; 
                 }
             }
+            return Ok();
         }
     }
 }
